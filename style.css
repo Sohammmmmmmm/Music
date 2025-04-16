@@ -103,9 +103,10 @@ body {
 .cardContainer {
     margin: 30px;
     display: flex;
+    justify-content: center;
     gap: 10px;
     flex-wrap: wrap;
-    overflow: scroll;
+    overflow: auto;
     max-height: 70vh;
 }
 
@@ -189,7 +190,7 @@ body {
     width: 70vw;
     filter: invert(1);
     border-radius: 10px;
-    height: 40px;
+    min-height: 40px;
 }
 
 .songbuttons {
@@ -284,16 +285,17 @@ body {
 .abovebar{
     display: flex;
     justify-content: space-between;
+    margin: 20px 0;
 }
 
 @media (max-width : 1400px) {
     .left{
         background-color: red;
         position: absolute; 
-        left: -100%;
+        left: -120%;
         transition: all .3s;
         z-index: 1;
-        width: 433px;
+        width: 373px;
         background-color: black;
     }
 
@@ -309,11 +311,26 @@ body {
 
     }
     .playbar{
-        width: 95vw;
+        width: calc(100vw - 60px);
 
     }
+
+    .seekbar{
+        width: calc(100vw - 70px);
+
+    }
+
+
     .hamburger{
         display: block;
 
+    }
+    
+    .card{
+        width: 90vw;
+    }
+
+    .cardContainer{
+        margin: 0;
     }
 }
