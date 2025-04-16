@@ -209,6 +209,13 @@ body {
     display: none;
 }
 
+.hamburgerContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+}
+
 .songlist ul {
     list-style: none;
     padding: 0;
@@ -286,7 +293,8 @@ body {
         left: -100%;
         transition: all .3s;
         z-index: 1;
-        width: 233px;
+        width: 433px;
+        background-color: black;
     }
     .right{
         width: 100vw;
